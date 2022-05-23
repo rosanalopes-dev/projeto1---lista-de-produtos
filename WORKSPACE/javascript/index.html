@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Javascript</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/script1.js"></script>
+</head>
+
+<body>
+
+
+    <header>
+
+        <h1>Loja Simbiose</h1>
+    </header>
+
+    <main>
+        <div class="tile">
+            <h2>Produtos</h2>
+            <span>
+              Lista de Produtos Simbiose.  
+            </span>
+
+
+        </div>
+
+        <div class="card">
+
+            <div class="lineInput">
+                <label>Produto</label>
+                <input type="text" id="produto" placeholder="Nome do Produto">
+            </div>
+
+            <div class="lineInput">
+                <label>Preço</label>
+                <input type="number" id="preco"  placeholder="Preço do Produto">
+            </div>
+
+
+            <button onclick="produto.salvar()" id="btn1" >Salvar</button>
+            <button onclick ="produto.cancelar()"> Cancelar</button>
+            <button onclick ="produto.deletarTodos()"> Excluir Todos</button>
+
+
+
+        </div>
+
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th class="center"> ID</th>
+                    <th> Produto</th>
+                    <th> Valor</th>
+                    <th class="center"> Acões</th>
+                    <th> Nome </th>
+                    <th> Email </th>
+                </thead>
+
+            <tbody
+                id ="tbody">
+            </tbody>
+
+            </table>
+
+        </div>
+        
+    </main>
+   
+
+</body>
+</html>
